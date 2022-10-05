@@ -6,6 +6,8 @@
 ### Install [nvm](https://github.com/nvm/)
 Cool!
 
+### Create new project
 
-:))s
+`yarn create vite`
 
+### 
