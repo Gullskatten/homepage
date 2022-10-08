@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <div className="bg-slate-100 dark:bg-slate-800">
         <section className="bg-[url('/assets/lowpoly-lg.jpg')] bg-no-repeat bg-center bg-cover h-96 flex items-center justify-center text-white shadow-lg">
-          <div className="rounded-md m-4 bg-gradient-to-r bg-clip-padding backdrop-filter backdrop-brightness-75 backdrop-blur-xl ">
+          <div className="rounded-md m-4 bg-gradient-to-r bg-clip-padding backdrop-filter backdrop-blur-md">
             <div className="rounded-t-md p-6 transition-all duration-300">
               <h1 className="md:mb-2 md:text-2xl lg:text-4xl font-bold text-white">
                 Norwegian Magic
@@ -32,12 +32,48 @@ const Home = () => {
         </section>
         <section className="p-10">
           <h2 className="font-bold text-4xl">Latest News</h2>
-          <div className="flex items-center justify-start space-x-2 my-5">
-            <article className="rounded-md w-96 shadow-md cursor-pointer group">
-              <div className="rounded-t-md duration-300 bg-[url('/assets/autumn-lg.jpg')] bg-no-repeat bg-center bg-cover h-44 group-hover:h-48 transition-all"></div>
+          <div className="grid grid-cols-1 gap-4 my-5 md:grid-cols-2 lg:grid-cols-4">
+            <article className="rounded-md shadow-md cursor-pointer hover:shadow-lg transition-all border border-slate-300 dark:border-none dark:hover:shadow-slate-900">
+              <div className="rounded-t-md duration-300 bg-[url('/assets/autumn-lg.jpg')] bg-no-repeat bg-center bg-cover h-44"></div>
               <div className="h-1 bg-gradient-to-r from-cyan-500 to-pink-500" />
               <div className="rounded-b-md bg-white dark:bg-slate-700">
-                <div className="p-2">
+                <div className="p-4">
+                  <h3 className="font-bold text-lg">Free React Course 🎉</h3>
+                  <div className="flex items-center justify-between text-slate-600 dark:text-slate-500 text-xs mb-2">
+                    <span>Monday, 20th October 2022</span>
+                    <span>Espen G.</span>
+                  </div>
+                  <p className="text-sm">
+                    Familiarize yourself with TypeScript, Tailwind, and Vite. In
+                    this course we'll skip the basics, and head straight over to
+                    writing production-ready code. 😄
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article className="rounded-md shadow-md cursor-pointer hover:shadow-lg transition-all border border-slate-300 dark:border-none dark:hover:shadow-slate-900">
+              <div className="rounded-t-md duration-300 bg-[url('/assets/winter_droneview.jpg')] bg-no-repeat bg-center bg-cover h-44"></div>
+              <div className="h-1 bg-gradient-to-r from-cyan-500 to-pink-500" />
+              <div className="rounded-b-md bg-white dark:bg-slate-700">
+                <div className="p-4">
+                  <h3 className="font-bold text-lg">Free React Course 🎉</h3>
+                  <div className="flex items-center justify-between text-slate-600 dark:text-slate-500 text-xs mb-2">
+                    <span>Monday, 20th October 2022</span>
+                    <span>Espen G.</span>
+                  </div>
+                  <p className="text-sm">
+                    Familiarize yourself with TypeScript, Tailwind, and Vite. In
+                    this course we'll skip the basics, and head straight over to
+                    writing production-ready code. 😄
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article className="rounded-md shadow-md cursor-pointer group hover:shadow-lg transition-all border border-slate-300 dark:border-none dark:hover:shadow-slate-900">
+              <div className="rounded-t-md duration-300 bg-[url('/assets/woods_droneview-lg.jpg')] bg-no-repeat bg-center bg-cover h-44 transition-all"></div>
+              <div className="h-1 bg-gradient-to-r from-cyan-500 to-pink-500" />
+              <div className="rounded-b-md bg-white dark:bg-slate-700">
+                <div className="p-4">
                   <h3 className="font-bold text-lg">Free React Course 🎉</h3>
                   <div className="flex items-center justify-between text-slate-600 dark:text-slate-500 text-xs mb-2">
                     <span>Monday, 20th October 2022</span>
