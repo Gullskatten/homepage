@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="flex w-full justify-between items-center p-4  dark:bg-slate-800 font-bold shadow-sm">
+      <nav className="flex w-full justify-between items-center p-4 dark:bg-slate-800 font-bold shadow-sm">
         <div className="flex items-center space-x-6">
           <Link to="/" className="flex space-x-2 font-bold items-center">
             <span>awesomehikes.com</span>{" "}
@@ -26,7 +26,7 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
-      <div className="h-1 bg-gradient-to-r from-purple-500 to-pink-500" />
+      <div className="h-1 bg-gradient-to-r from-cyan-500 to-pink-500" />
     </div>
   );
 };
