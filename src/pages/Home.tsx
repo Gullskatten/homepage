@@ -7,8 +7,13 @@ import BannerImg from "../assets/lowpoly-lg.jpg";
 import AutumnImg from "../assets/autumn-lg.jpg";
 import WinterImg from "../assets/winter_droneview.jpg";
 import WoodsImg from "../assets/woods_droneview-lg.jpg";
+import {signInWithFacebook, signout} from "../Auth"
 
 const Home = () => {
+  const handleUserLogin = async () => {
+   const response = await signInWithFacebook()
+   //console.log(response)
+  }
   return (
     <div>
       <div className="bg-slate-100 dark:bg-slate-800">
@@ -18,7 +23,11 @@ const Home = () => {
             buttonText={"Get Started"}
             title="Norwegian Fjords"
             description="Embrace the beauty of the Norwegian fjords and its lush forest."
+            onClick={handleUserLogin}
           />
+          <button onClick={handleUserLogin}>
+Login 
+          </button>
         </Banner>
         <section className="p-10">
           <h2 className="font-bold text-4xl">Latest News</h2>

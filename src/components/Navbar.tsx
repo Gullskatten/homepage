@@ -5,6 +5,8 @@ import { useDarkMode } from "usehooks-ts";
 const Navbar = () => {
   const { isDarkMode, toggle } = useDarkMode();
 
+  //console.log(import.meta.env.REACT_APP_SUPABASE_URL)
+  console.log(import.meta.env.VITE_REACT_APP_SUPABASE_URL)
   return (
     <div>
       <nav className="flex w-full justify-between items-center p-4 dark:bg-slate-800 font-bold shadow-sm">
