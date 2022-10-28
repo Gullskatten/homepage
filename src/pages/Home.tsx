@@ -5,7 +5,7 @@ import Banner from "../components/Banner";
 
 import BannerImg from "../assets/lowpoly-lg.jpg";
 import AutumnImg from "../assets/autumn-lg.jpg";
-import WinterImg from "../assets/winter_droneview-lg.jpg";
+import WinterImg from "../assets/winter_droneview.jpg";
 import WoodsImg from "../assets/woods_droneview-lg.jpg";
 
 const Home = () => {

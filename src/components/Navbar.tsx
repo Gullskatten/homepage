@@ -8,13 +8,16 @@ const Navbar = () => {
   return (
     <div>
       <nav className="flex w-full justify-between items-center p-4 dark:bg-slate-800 font-bold shadow-sm">
-        <div className="flex items-center space-x-6">
+        <div className="items-center space-x-6 hidden sm:flex">
           <Link to="/" className="flex space-x-2 font-bold items-center">
             <span>awesomehikes.com</span>{" "}
             <AcademicCapIcon className="h-6 w-6 text-blue-500" />
           </Link>
           <Link to="/booking">Booking</Link>
           <Link to="/gallery">Gallery</Link>
+        </div>
+        <div className="flex sm:hidden">
+          <AcademicCapIcon className="h-6 w-6 text-blue-500" />
         </div>
         <div>
           <button onClick={toggle} className="text-blue-500">

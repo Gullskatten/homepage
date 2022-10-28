@@ -19,15 +19,15 @@ function Card({
   to,
   url,
 }: CardProps & LinkProps) {
-  console.log(url);
   return (
     <Link
       to={to}
       className="bg-white dark:bg-slate-700 rounded-md shadow-md cursor-pointer hover:shadow-lg transition-all border border-slate-300 dark:border-none dark:hover:shadow-slate-900"
     >
       <img
+        aria-label="Card image"
         src={url}
-        className={`rounded-t-md duration-300 bg-no-repeat bg-center bg-cover h-44`}
+        className={`block object-cover w-full rounded-t-md duration-300 bg-no-repeat bg-cover h-44`}
       />
       <Divider />
       <div className="rounded-b-md">
