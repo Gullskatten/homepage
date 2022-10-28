@@ -8,7 +8,7 @@ type CardProps = {
   author: String;
   timestamp: number;
   description: String;
-  bannerUrl?: String;
+  url?: String;
 };
 
 function Card({
@@ -17,7 +17,7 @@ function Card({
   timestamp,
   description,
   to,
-  bannerUrl = "/assets/autumn-lg.jpg",
+  url = "/assets/autumn-lg.jpg",
 }: CardProps & LinkProps) {
   return (
     <Link
@@ -25,7 +25,7 @@ function Card({
       className="bg-white dark:bg-slate-700 rounded-md shadow-md cursor-pointer hover:shadow-lg transition-all border border-slate-300 dark:border-none dark:hover:shadow-slate-900"
     >
       <div
-        className={`rounded-t-md duration-300 bg-[url('${bannerUrl}')] bg-no-repeat bg-center bg-cover h-44`}
+        className={`rounded-t-md duration-300 bg-[url('${url}')] bg-no-repeat bg-center bg-cover h-44`}
       ></div>
       <Divider />
       <div className="rounded-b-md">

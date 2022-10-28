@@ -1,15 +1,14 @@
-import React from "react";
-import Divider from "../components/Divider";
 import Card from "../components/Card";
 import { subDays } from "date-fns";
 import BannerCard from "../components/BannerCard";
 import Banner from "../components/Banner";
+import bannerImg from "../assets/lowpoly-lg.jpg";
 
 const Home = () => {
   return (
     <div>
       <div className="bg-slate-100 dark:bg-slate-800">
-        <Banner bannerUrl="/assets/lowpoly-lg.jpg">
+        <Banner bannerUrl={bannerImg}>
           <BannerCard
             to="/stories"
             buttonText={"Get Started"}
@@ -44,7 +43,7 @@ const Home = () => {
               timestamp={subDays(new Date(), 12).getTime()}
               to="/stories/3"
               description="In this post I'll go over my ambitions for this fancy website."
-              bannerUrl="/assets/woods_droneview-lg.jpg"
+              bannerUrl="/src/assets/woods_droneview-lg.jpg"
             />
           </div>
         </section>
