@@ -2,13 +2,17 @@ import Card from "../components/Card";
 import { subDays } from "date-fns";
 import BannerCard from "../components/BannerCard";
 import Banner from "../components/Banner";
-import bannerImg from "../assets/lowpoly-lg.jpg";
+
+import BannerImg from "../assets/lowpoly-lg.jpg";
+import AutumnImg from "../assets/autumn-lg.jpg";
+import WinterImg from "../assets/winter_droneview-lg.jpg";
+import WoodsImg from "../assets/woods_droneview-lg.jpg";
 
 const Home = () => {
   return (
     <div>
       <div className="bg-slate-100 dark:bg-slate-800">
-        <Banner bannerUrl={bannerImg}>
+        <Banner src={BannerImg}>
           <BannerCard
             to="/stories"
             buttonText={"Get Started"}
@@ -27,7 +31,7 @@ const Home = () => {
               description="Familiarize yourself with TypeScript, Tailwind, and Vite. In
 			this course we'll skip the basics, and head straight over to
 			writing production-ready code. 😄"
-              bannerUrl="/assets/autumn-lg.jpg"
+              url={AutumnImg}
             />
             <Card
               title="Bugfixes! 🐛"
@@ -35,7 +39,7 @@ const Home = () => {
               timestamp={subDays(new Date(), 2).getTime()}
               to="/stories/2"
               description="Check out the new version with various bugfixes!"
-              bannerUrl="/assets/winter_droneview.jpg"
+              url={WinterImg}
             />
             <Card
               title="My first post - This is awesome!"
@@ -43,7 +47,7 @@ const Home = () => {
               timestamp={subDays(new Date(), 12).getTime()}
               to="/stories/3"
               description="In this post I'll go over my ambitions for this fancy website."
-              bannerUrl="/src/assets/woods_droneview-lg.jpg"
+              url={WoodsImg}
             />
           </div>
         </section>

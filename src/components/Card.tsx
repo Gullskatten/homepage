@@ -4,11 +4,11 @@ import Divider from "./Divider";
 import { formatRelative } from "date-fns";
 
 type CardProps = {
-  title: String;
-  author: String;
+  title: string;
+  author: string;
   timestamp: number;
-  description: String;
-  url?: String;
+  description: string;
+  url: string;
 };
 
 function Card({
@@ -17,16 +17,18 @@ function Card({
   timestamp,
   description,
   to,
-  url = "/assets/autumn-lg.jpg",
+  url,
 }: CardProps & LinkProps) {
+  console.log(url);
   return (
     <Link
       to={to}
       className="bg-white dark:bg-slate-700 rounded-md shadow-md cursor-pointer hover:shadow-lg transition-all border border-slate-300 dark:border-none dark:hover:shadow-slate-900"
     >
-      <div
-        className={`rounded-t-md duration-300 bg-[url('${url}')] bg-no-repeat bg-center bg-cover h-44`}
-      ></div>
+      <img
+        src={url}
+        className={`rounded-t-md duration-300 bg-no-repeat bg-center bg-cover h-44`}
+      />
       <Divider />
       <div className="rounded-b-md">
         <article className="p-4">

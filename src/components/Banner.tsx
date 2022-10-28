@@ -1,16 +1,19 @@
 import React from "react";
 
 type BannerProps = {
-  bannerUrl: String;
+  src: string;
 };
 
 function Banner({
-  bannerUrl,
+  src,
   children,
 }: BannerProps & React.HTMLAttributes<HTMLDivElement>) {
   return (
     <section
-      className={`bg-[url('${bannerUrl}')] bg-no-repeat bg-center bg-cover h-96 flex items-center justify-center text-white shadow-lg`}
+      className={` bg-no-repeat bg-center bg-cover h-96 flex items-center justify-center text-white shadow-lg`}
+      style={{
+        backgroundImage: `url(${src})`,
+      }}
     >
       {children}
     </section>
