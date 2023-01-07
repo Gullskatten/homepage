@@ -11,7 +11,7 @@ FROM node:16-alpine as webapp
 
 COPY --from=builder /opt/app/dist /opt/app
 
-WORKDIR /opt/app/dist
+WORKDIR /opt/app
 
 RUN npm install -g serve
 
