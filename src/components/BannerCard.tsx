@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
 
 type BannerCardProps = {
-  title: String;
-  description: String;
-  buttonText: String;
-  to: String;
+  title: string;
+  description: string;
+  buttonText: string;
+  to: string;
 };
 
 function BannerCard({
